@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/Img_nav.jpg);
+    background-size: cover;
+}
+
+button {
+    cursor: pointer;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.searchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox input {
+    border-radius: 8px 0 0 8px;
+    border: 0;
+    outline: none;
+    height: 36px;
+    padding: 4px 16px;
+    background-color: white;
+    color: #000;
+}
+
+.searchBox button {
+    border-radius: 0 8px 8px 0;
+    border: 0;
+    height: 36px;
+    padding: 4px 16px;
+    background-color: white;
+}
+
+.card{margin: auto;
+    margin-top: 2rem;
+    display: block;
+    width: 18rem;
+    margin-bottom: 2rem;
+}
+.card-body{
+    background-color: darkgrey;
+}
+
+.digiFont{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    font-family: 'Pixel Digivolve', sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+.container{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nameListContainer {
+    height: 330px;
+    overflow-y: scroll;
+}
+
+#image{
+    height: 17.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#listado{
+    font-size: large;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+}

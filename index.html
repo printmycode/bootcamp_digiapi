@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- External fonts-->
+    <link href="https://fonts.cdnfonts.com/css/pixel-digivolve" rel="stylesheet">
+
+    <title>Digimon API</title>
+</head>
+<body>
+    <nav>
+        <h1 class="digiFont">DIGIMON API</h1>
+    </nav>
+    <main>
+        <div class="searchBox">
+            <input type="text" name="nameInput" id="digimonName" placeholder="Nombre del digimon">
+            <button id="search">🔎</button>
+        </div>
+        <div></div>
+        <div class="container ps-5 pe-5">
+            <div class="row">
+                <div class="col digimonBox">
+                    <div class="card border border-5 border-dark rounded-3">
+                        <div class="m-auto" id="image">
+                            <img src="./assets/img/Logo_digimon_png.png" 
+                            class="card-img-top ps-3 pe-3" 
+                            alt="${data[0].name}">
+                        </div>
+                            <div class="card-body digimonInfo">
+                                <h5 class="card-title">Nombre:</h5>
+                                <p class="card-text">Level:</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col digimonList">
+                    <div class="card border border-5 border-dark rounded-3">
+                        <div class="card-body" id="listado">
+                            Listado Digimon
+                        </div>
+                        <div class="nameListContainer">
+                            <ul id="nameList"></ul>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
